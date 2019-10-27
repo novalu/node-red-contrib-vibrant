@@ -7,7 +7,7 @@
     "noImplicitAny": false,
     "sourceMap": true, // debug support,
     "rootDir": "src",
-    "outDir": "bin",
+    "outDir": "dist",
     "typeRoots": ["./node_modules/@types"]
   },
   "include": [
