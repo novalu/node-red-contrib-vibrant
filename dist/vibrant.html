@@ -1,0 +1,58 @@
+<script type="text/javascript">
+  RED.nodes.registerType('vibrant', {
+    category: 'function',
+    color: '#a6bbcf',
+    defaults: {
+      name: { value: "" }
+    },
+    inputs: 1,
+    inputLabels: "Filename",
+    outputs: 1,
+    outputLabels: [ "Palette" ],
+    icon: "vibrant_palette.png",
+    label: function() {
+      return this.name || "vibrant";
+    }
+  });
+</script>
+
+<script type="text/x-red" data-template-name="vibrant">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="vibrant">
+    <p>A node that extract color palette, i.e. prominent colors from an image.</p>
+
+    <h3>Inputs</h3>
+        <dl class="message-properties">
+            <dt>payload
+                <span class="property-type">string</span>
+            </dt>
+            <dd> path of the image or an URL pointing to image at HTTP/HTTPS. </dd>
+        </dl>
+
+    <h3>Outputs</h3>
+        <ol class="node-ports">
+            <li>Standard output
+                <dl class="message-properties">
+                    <dt>payload <span class="property-type">object</span></dt>
+                    <dd>color palette from an image found at provided path.</dd>
+                </dl>
+            </li>
+        </ol>
+
+    <h3>Details</h3>
+        <p><code>msg.payload</code> could be local file or remote file at HTTP/HTTPS. Path will be processed with <code>node-vibrant</code> library for extracting prominent colors from an image.</p>
+
+        <p>Output payload is object with fields <code>Vibrant</code>, <code>DarkVibrant</code>, <code>LightVibrant</code>, <code>Muted</code>, <code>DarkMuted</code> and <code>LightMuted</code>, each one with fields <code>hex</code>, <code>r</code>, <code>g</code>, <code>b</code>, <code>rgb</code>, <code>hsl</code>, <code>population</code>, <code>bodyTextColor</code>, <code>titleTextColor</code></p>
+
+   <h3>References</h3>
+        <ul>
+            <li><a href="https://www.npmjs.com/package/node-vibrant"> node-vibrant library on npm</li>
+            <li><a href="https://github.com/novalu/node-red-contrib-vibrant"> this node source in GitHub</li>
+            <li><a href=""> use of this library in smart home ambient light from currently playing song in Spotify (TODO)
+        </ul>
+</script>

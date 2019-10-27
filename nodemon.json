@@ -1,0 +1,8 @@
+{
+  "execMap": {
+    "js": "node",
+    "pug": "node"
+  },
+  "ext": "js",
+  "delay": 2000
+}

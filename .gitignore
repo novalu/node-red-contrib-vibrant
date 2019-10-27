@@ -1,0 +1,11 @@
+############### APP ##################
+
+node_modules
+
+# ignore all generated js and map
+**/*.js
+**/*.js.map
+
+############## .IDEA #################
+
+.idea

@@ -1,0 +1,44 @@
+{
+  "name": "node-red-contrib-vibrant",
+  "version": "1.0.0",
+  "description": "A node for Node-RED that extract prominent colors from an image.",
+  "main": "src/main.js",
+  "repository": "github:novalu/node-red-contrib-vibrant",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --inspect src/main.js",
+    "watch": "nodemon --inspect"
+  },
+  "keywords": [
+    "node-red",
+    "nodered",
+    "vibrant",
+    "color"
+  ],
+  "author": {
+    "name": "novalu",
+    "url": "http://www.novaklukas.cz",
+    "email": "novalu@novalu.info"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "^16.1.7",
+    "@types/hapi__joi": "^16.0.2",
+    "@types/mime-types": "^2.1.0",
+    "@types/node": "10.12.18",
+    "@types/node-red": "^0.20.0",
+    "gulp-run-command": "0.0.9",
+    "mime-types": "^2.1.24",
+    "node-vibrant": "^3.1.4",
+    "npm": "^6.4.1",
+    "typescript": "^3.1.6"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "node-red": {
+    "nodes": {
+      "vibrant": "dist/vibrant.js"
+    }
+  }
+}
