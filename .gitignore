@@ -1,6 +1,7 @@
 ############### APP ##################
 
 node_modules
+package-lock.json
 
 # ignore all generated js and map
 **/*.js
