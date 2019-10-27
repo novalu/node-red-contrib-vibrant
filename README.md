@@ -4,6 +4,8 @@
 
 A node for Node-RED that extract color palette, i.e. prominent colors from an image.
 
+![Screenshot from Node-RED](assets/screenshot.png)
+
 ## Usage
 
 Simply drag node `vibrant` from dashboard palette to your flow. Node expects local path or remote URL of an image from which you want to extract prominent colors. Node perform several validation and then sends payload with raw output from `node-vibrant` library. In output you can find several swatches (`Vibrant`, `Muted`, `DarkVibrant`, `DarkMuted`, `LightVibrant` and `LightMuted`), each one with fields `r`, `g`, `b`, `rgb`, `hex`, `hsl`, `population`, `titleTextColor`, `bodyTextColor`. 
