@@ -7,8 +7,7 @@
     "noImplicitAny": false,
     "sourceMap": true, // debug support,
     "rootDir": "src",
-    "outDir": "dist",
-    "typeRoots": ["./node_modules/@types"]
+    "outDir": "dist"
   },
   "include": [
     "src/**/*.ts"
