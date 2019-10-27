@@ -13,7 +13,11 @@
     "node-red",
     "nodered",
     "vibrant",
-    "color"
+    "muted",
+    "color",
+    "palette",
+    "extract color",
+    "prominent color"
   ],
   "author": {
     "name": "novalu",
