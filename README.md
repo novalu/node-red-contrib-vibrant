@@ -1,3 +1,7 @@
+# This repo has been archived.
+
+---
+
 [![NPM](https://nodei.co/npm/node-red-contrib-vibrant.png)](https://nodei.co/npm/node-red-contrib-vibrant/)
 
 # Node-RED vibrant node
